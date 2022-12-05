@@ -4,6 +4,7 @@ import CounterContextProvider from "./Context/CounterContext"
 /** Component */
 import Counter from "./Component/Counter"
 import ShowCounter from "./Component/ShowCounter"
+import CheckCounter from "./Component/CheckCounter"
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
 
         <Counter />
         <ShowCounter />
+        <CheckCounter />
       </React.Fragment>
     </CounterContextProvider>
   )
