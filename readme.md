@@ -16,3 +16,7 @@ StrictMode is a tool for highlighting potential problems in an application. Like
 Creates link between compiled output file and source file.
 Helps to debug easy in case of an error in browser - In dev mode
 It is a best practises to hide the source map in production mode to prevent accessing the source code.
+
+**HOC**
+Higher order component enhance the componenet by adding some extra logic to it.
+check example
