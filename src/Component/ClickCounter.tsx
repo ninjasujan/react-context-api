@@ -2,8 +2,8 @@ import React from "react"
 import withState from "../HOC/withState"
 
 interface IProps {
-  state: number
-  updateToggle: (num: number) => void
+  state?: number
+  updateToggle?: (num: number) => void
 }
 
 const ClickCounter: React.FC<IProps> = (props) => {
@@ -11,7 +11,7 @@ const ClickCounter: React.FC<IProps> = (props) => {
     <div>
       <button
         onClick={() => {
-          props.updateToggle(1)
+          props.updateToggle?.(1)
         }}
       >
         click
