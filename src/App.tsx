@@ -1,28 +1,20 @@
-import React from "react"
-import CounterContextProvider from "./Context/CounterContext"
-
-/** Component */
-import Counter from "./Component/Counter"
-import ShowCounter from "./Component/ShowCounter"
-import CheckCounter from "./Component/CheckCounter"
+import Divider from "@mui/material/Divider"
+import MuiPage from "./pages/MuiLayout"
+import SXProp from "./pages/SXProp"
+import StyledComp from "./pages/StyledComp"
+import MuiComp from "./pages/MuiComp"
 
 const App = () => {
   return (
-    <CounterContextProvider>
-      <React.Fragment>
-        <h1>React Context API</h1>
-        <img
-          src="/images/react_public.png"
-          width="200"
-          height="200"
-          alt="React Logo Public"
-        />
-
-        <Counter />
-        <ShowCounter />
-        <CheckCounter />
-      </React.Fragment>
-    </CounterContextProvider>
+    <div>
+      <MuiPage />
+      <Divider light />
+      <SXProp />
+      <Divider light />
+      <StyledComp header="My New Title" />
+      <MuiComp />
+      <Divider light />
+    </div>
   )
 }
 
