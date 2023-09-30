@@ -1,29 +1,29 @@
-import React from "react"
-import CounterContextProvider from "./Context/CounterContext"
-
-/** Component */
-import Counter from "./Component/Counter"
-import ShowCounter from "./Component/ShowCounter"
-import CheckCounter from "./Component/CheckCounter"
+import React from "react";
+const SectionItem = React.lazy(
+  () => import("./Component/StateComp/SectionItem")
+);
+const PageItem = React.lazy(() => import("./Component/StateComp/PageItem"));
+import RenderOnViewPortEntry from "./Component/RenderOnViewPortEntry";
 
 const App = () => {
   return (
-    <CounterContextProvider>
-      <React.Fragment>
-        <h1>React Context API</h1>
-        <img
-          src="/images/react_public.png"
-          width="200"
-          height="200"
-          alt="React Logo Public"
-        />
+    <>
+      <RenderOnViewPortEntry
+        threshold={0.25}
+        className="box"
+        style={{ minHeight: "900px" }}
+      >
+        <SectionItem />
+      </RenderOnViewPortEntry>
+      <RenderOnViewPortEntry
+        threshold={0.25}
+        className="box"
+        style={{ minHeight: "900px" }}
+      >
+        <PageItem />
+      </RenderOnViewPortEntry>
+    </>
+  );
+};
 
-        <Counter />
-        <ShowCounter />
-        <CheckCounter />
-      </React.Fragment>
-    </CounterContextProvider>
-  )
-}
-
-export default App
+export default App;
