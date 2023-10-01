@@ -1,7 +1,5 @@
 import React from "react";
-const SectionItem = React.lazy(
-  () => import("./Component/StateComp/SectionItem")
-);
+
 const PageItem = React.lazy(() => import("./Component/StateComp/PageItem"));
 import RenderOnViewPortEntry from "./Component/RenderOnViewPortEntry";
 
@@ -13,14 +11,35 @@ const App = () => {
         className="box"
         style={{ minHeight: "900px" }}
       >
-        <SectionItem />
+        <PageItem title="Page Item" />
       </RenderOnViewPortEntry>
       <RenderOnViewPortEntry
         threshold={0.25}
         className="box"
-        style={{ minHeight: "900px" }}
+        style={{ minHeight: "300px" }}
       >
-        <PageItem />
+        <PageItem title="Page Item 1" />
+      </RenderOnViewPortEntry>
+      <RenderOnViewPortEntry
+        threshold={0.25}
+        className="box"
+        style={{ minHeight: "300px" }}
+      >
+        <PageItem title="Page Item 2" />
+      </RenderOnViewPortEntry>
+      <RenderOnViewPortEntry
+        threshold={0.25}
+        className="box"
+        style={{ minHeight: "300px" }}
+      >
+        <PageItem title="Page Item 3" />
+      </RenderOnViewPortEntry>
+      <RenderOnViewPortEntry
+        threshold={0.25}
+        className="box"
+        style={{ minHeight: "300px" }}
+      >
+        <PageItem title="Page Item 4" />
       </RenderOnViewPortEntry>
     </>
   );

@@ -1,10 +1,9 @@
 import "../style.css";
 
-const PageItem = () => {
-  console.log("[Page component]");
+const PageItem: React.FC<{ title: string }> = ({ title }) => {
   return (
     <div className="item_box">
-      <span>Page Item</span>
+      <span>{title}</span>
     </div>
   );
 };
