@@ -11,13 +11,6 @@ const App = () => {
         className="box"
         style={{ minHeight: "900px" }}
       >
-        <PageItem title="Page Item" />
-      </RenderOnViewPortEntry>
-      <RenderOnViewPortEntry
-        threshold={0.25}
-        className="box"
-        style={{ minHeight: "300px" }}
-      >
         <PageItem title="Page Item 1" />
       </RenderOnViewPortEntry>
       <RenderOnViewPortEntry
@@ -40,6 +33,13 @@ const App = () => {
         style={{ minHeight: "300px" }}
       >
         <PageItem title="Page Item 4" />
+      </RenderOnViewPortEntry>
+      <RenderOnViewPortEntry
+        threshold={0.25}
+        className="box"
+        style={{ minHeight: "300px" }}
+      >
+        <PageItem title="Page Item 5" />
       </RenderOnViewPortEntry>
     </>
   );
