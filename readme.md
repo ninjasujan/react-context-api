@@ -16,3 +16,11 @@ StrictMode is a tool for highlighting potential problems in an application. Like
 Creates link between compiled output file and source file.
 Helps to debug easy in case of an error in browser - In dev mode
 It is a best practises to hide the source map in production mode to prevent accessing the source code.
+
+**3. React Context-API**
+Context API is uded to pass state and props between component easily.
+All component which are wrapped with context provider will have access to the context state.
+2 hooks used in context API to manage the state.
+
+- useContext
+- createContext
